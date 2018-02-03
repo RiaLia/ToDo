@@ -13,6 +13,10 @@
 		10D0D81B20207F5300B2447C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10D0D81A20207F5300B2447C /* Assets.xcassets */; };
 		10D0D81E20207F5300B2447C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10D0D81C20207F5300B2447C /* LaunchScreen.storyboard */; };
 		10D0D82120207F5300B2447C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D0D82020207F5300B2447C /* main.m */; };
+		10D0D82F2020B38000B2447C /* ToDoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D0D82E2020B38000B2447C /* ToDoController.m */; };
+		10D0D83220224B1E00B2447C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 10D0D83120224B1E00B2447C /* libsqlite3.tbd */; };
+		10D0D83820246DC900B2447C /* EditInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D0D83720246DC900B2447C /* EditInfoController.m */; };
+		10D0D83E2024A29500B2447C /* DetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 10D0D83D2024A29500B2447C /* DetailController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,13 @@
 		10D0D81D20207F5300B2447C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		10D0D81F20207F5300B2447C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10D0D82020207F5300B2447C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		10D0D82D2020B38000B2447C /* ToDoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ToDoController.h; sourceTree = "<group>"; };
+		10D0D82E2020B38000B2447C /* ToDoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoController.m; sourceTree = "<group>"; };
+		10D0D83120224B1E00B2447C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		10D0D83620246DC900B2447C /* EditInfoController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditInfoController.h; sourceTree = "<group>"; };
+		10D0D83720246DC900B2447C /* EditInfoController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditInfoController.m; sourceTree = "<group>"; };
+		10D0D83C2024A29500B2447C /* DetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailController.h; sourceTree = "<group>"; };
+		10D0D83D2024A29500B2447C /* DetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D0D83220224B1E00B2447C /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +56,7 @@
 			children = (
 				10D0D81020207F5300B2447C /* ToDo */,
 				10D0D80F20207F5300B2447C /* Products */,
+				10D0D83020224B1D00B2447C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,13 +75,27 @@
 				10D0D81220207F5300B2447C /* AppDelegate.m */,
 				10D0D81420207F5300B2447C /* ViewController.h */,
 				10D0D81520207F5300B2447C /* ViewController.m */,
+				10D0D82D2020B38000B2447C /* ToDoController.h */,
+				10D0D82E2020B38000B2447C /* ToDoController.m */,
+				10D0D83620246DC900B2447C /* EditInfoController.h */,
+				10D0D83720246DC900B2447C /* EditInfoController.m */,
 				10D0D81720207F5300B2447C /* Main.storyboard */,
 				10D0D81A20207F5300B2447C /* Assets.xcassets */,
 				10D0D81C20207F5300B2447C /* LaunchScreen.storyboard */,
 				10D0D81F20207F5300B2447C /* Info.plist */,
 				10D0D82020207F5300B2447C /* main.m */,
+				10D0D83C2024A29500B2447C /* DetailController.h */,
+				10D0D83D2024A29500B2447C /* DetailController.m */,
 			);
 			path = ToDo;
+			sourceTree = "<group>";
+		};
+		10D0D83020224B1D00B2447C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				10D0D83120224B1E00B2447C /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,7 +169,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10D0D83820246DC900B2447C /* EditInfoController.m in Sources */,
 				10D0D81620207F5300B2447C /* ViewController.m in Sources */,
+				10D0D83E2024A29500B2447C /* DetailController.m in Sources */,
+				10D0D82F2020B38000B2447C /* ToDoController.m in Sources */,
 				10D0D82120207F5300B2447C /* main.m in Sources */,
 				10D0D81320207F5300B2447C /* AppDelegate.m in Sources */,
 			);
