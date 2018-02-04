@@ -73,7 +73,7 @@
                         </connections>
                     </tableView>
                     <toolbarItems/>
-                    <navigationItem key="navigationItem" title="Today's TODO's" id="g8C-rX-AhC">
+                    <navigationItem key="navigationItem" title="Dagens TODO's" id="g8C-rX-AhC">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Wun-LA-kCn">
                             <color key="tintColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
@@ -103,12 +103,13 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dUO-i5-4YV">
-                                <rect key="frame" x="71" y="99" width="152" height="21"/>
+                                <rect key="frame" x="71" y="99" width="197" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Enter a new task">
+                                    <fragment content="Lägg Till Ny Uppgift">
                                         <attributes>
                                             <font key="NSFont" size="22" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                         </attributes>
                                     </fragment>
                                 </attributedString>
@@ -125,7 +126,7 @@
                                 <rect key="frame" x="71" y="166" width="152" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <attributedString key="attributedText">
-                                    <fragment content="Select a Priority">
+                                    <fragment content="Prioritet">
                                         <attributes>
                                             <font key="NSFont" size="22" name="BodoniSvtyTwoSCITCTT-Book"/>
                                             <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
@@ -138,8 +139,8 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="hwF-rY-pGz"/>
                     </view>
-                    <navigationItem key="navigationItem" title="New Task" id="wrs-DM-Nz3">
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Xoc-V1-br0">
+                    <navigationItem key="navigationItem" title="Skapa ny uppgift" id="wrs-DM-Nz3">
+                        <barButtonItem key="rightBarButtonItem" title="Spara" id="Xoc-V1-br0">
                             <color key="tintColor" red="0.57919406890000003" green="0.1280144453" blue="0.57268613580000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="savingInfo:" destination="b9I-lh-dEK" id="eYV-jg-ofu"/>
@@ -185,16 +186,17 @@
                                 <size key="titleShadowOffset" width="1" height="0.0"/>
                                 <state key="normal">
                                     <attributedString key="attributedTitle">
-                                        <fragment content="Clear Task">
+                                        <fragment content="Avsluta uppgift">
                                             <attributes>
                                                 <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <font key="NSFont" size="24" name="BodoniSvtyTwoSCITCTT-Book"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                             </attributes>
                                         </fragment>
                                     </attributedString>
                                 </state>
                                 <connections>
-                                    <action selector="clearTask:" destination="JUh-6F-aTz" eventType="touchUpInside" id="1XJ-Dn-E19"/>
+                                    <action selector="clearTask:" destination="JUh-6F-aTz" eventType="touchUpInside" id="L4R-3C-QvP"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5p1-Lc-F0z">
@@ -221,10 +223,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="bWP-AE-JpN"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Task Info" id="1r4-Ya-mPA"/>
+                    <navigationItem key="navigationItem" title="Info" id="1r4-Ya-mPA"/>
                     <nil key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="clearBtn" destination="PtP-Bm-DIt" id="Bun-SU-1Rf"/>
+                        <outlet property="clearBtn" destination="PtP-Bm-DIt" id="S9l-80-Q9K"/>
                         <outlet property="prioLabel" destination="5p1-Lc-F0z" id="2hk-DS-nbd"/>
                         <outlet property="taskLabel" destination="f6N-Ws-cYC" id="U5Q-jC-8Pu"/>
                     </connections>

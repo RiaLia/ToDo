@@ -11,37 +11,29 @@
 @interface DetailController ()
 @property (weak, nonatomic) IBOutlet UILabel *taskLabel;
 @property (weak, nonatomic) IBOutlet UILabel *prioLabel;
+@property (weak, nonatomic) IBOutlet UIButton *clearBtn;
 
 @end
-
 @implementation DetailController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
     self.taskLabel.text = self.taskName;
     self.prioLabel.text = self.prioName;
     
+    if([self.prio[self.indexNumber.row] isEqualToString:@"Klar"]){
+        self.clearBtn.hidden = YES;
+    }
 }
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
+
 - (IBAction)clearTask:(id)sender {
     float value = self.indexNumber.row;
-    [self.prio replaceObjectAtIndex:value withObject:@"Done"];
+    [self.prio replaceObjectAtIndex:value withObject:@"Klar"];
     [self.navigationController popViewControllerAnimated:YES];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

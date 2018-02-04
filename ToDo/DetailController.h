@@ -13,7 +13,6 @@
 @property (nonatomic) NSString *prioName;
 @property (nonatomic) NSMutableArray *prio;
 @property (nonatomic) NSMutableArray *tasks;
-@property (nonatomic) NSMutableArray *done;
 @property (nonatomic) NSIndexPath *indexNumber;
 
 
